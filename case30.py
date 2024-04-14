@@ -1,5 +1,5 @@
 from numpy import array
-def case30():
+def case():
 	ppc = {"version": '2'}
 	ppc["baseMVA"] = 100.0
 	ppc["bus"] = array([

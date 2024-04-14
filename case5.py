@@ -14,7 +14,7 @@ Created on Sat Sep 23 15:13:33 2023
 
 from numpy import array
 
-def case5():
+def case():
     """Power flow data for 6 bus, 3 gen case from Wood & Wollenberg.
     Please see L{caseformat} for details on the case file format.
 
@@ -33,11 +33,11 @@ def case5():
     ## bus data
     # bus_i type Pd Qd Gs Bs area Vm Va baseKV zone Vmax Vmin
     ppc["bus"] = array([
-	[1,	2,	0,	0,	0,	0,	1,	1,	0,	230,	1,	1.1,	0.9],
-	[2,	1,	300,	98.61,	0,	0,	1,	1,	0,	230,	1,	1.1,	0.9],
-	[3,	2,	300,	98.61,	0,	0,	1,	1,	0,	230,	1,	1.1,	0.9],
-	[4,	3,	400,	131.47,	0,	0,	1,	1,	0,	230,	1,	1.1,	0.9],
-	[5,	2,	0,	0,	0,	0,	1,	1,	0,	230,	1,	1.1,	0.9],
+	[1,	2,	0,	     0,	     0,	0,	1,	1,	0,	230,	1,	1.1,	0.9],
+	[2,	1,	300,	 98.61,	 0,	0,	1,	1,	0,	230,	1,	1.1,	0.9],
+	[3,	2,	300,	 98.61,	 0,	0,	1,	1,	0,	230,	1,	1.1,	0.9],
+	[4,	3,	400,	 131.47, 0,	0,	1,	1,	0,	230,	1,	1.1,	0.9],
+	[5,	2,	0,	     0,	     0,	0,	1,	1,	0,	230,	1,	1.1,	0.9],
 ])
 
     ## generator data
@@ -76,5 +76,6 @@ def case5():
 
     return ppc
 
-
+global donnee
+donnee = case()
 
